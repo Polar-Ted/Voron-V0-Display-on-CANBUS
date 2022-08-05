@@ -41,4 +41,6 @@ note the text inside the [xxxx:yyyy]
 
 -Remove the USB cable, power off system and set up the CAN wiring. 
 
+## Wiring Diagram
+
 ![Wiring](Images/V0Display_CAN_Wiring.jpg)
