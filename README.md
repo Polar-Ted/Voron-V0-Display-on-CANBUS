@@ -21,7 +21,7 @@ make menuconfig
 
 ![Config](/Images/V0Display_CAN_Config.jpg)
 
-set the DFU jumper on the V0 display and connect to the Pi by USB
+set the DFU boot jumper on the V0 display and connect to the Pi by USB
 
 Run lsusb from the command prompt
 
@@ -29,9 +29,11 @@ Make sure you see an STM32 in DFU mode listed
 Run dfu-util --list from the command prompt
 
 note the text inside the [xxxx:yyyy]
-Remove the boot jumper.
 
-Exit and Save
+Remove the DFU boot jumper.
+
+Exit and Save      
+
 Run make clean to clean up the make environment.
 
 Run make flash FLASH_DEVICE=xxxx:yyyy (using xxxx:yyyy from above)
