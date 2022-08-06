@@ -34,9 +34,10 @@ lsusb
   
 
 - Run dfu-util --list from the command prompt
-```
+``` 
 dfu-util --list
-```
+``` 
+      
       note the text inside the [xxxx:yyyy]
 
 - Exit and Save      
@@ -72,6 +73,8 @@ make flash FLASH_DEVICE=xxxx:yyyy
   [MCP2551 board](https://www.aliexpress.com/item/2255800362518857.html?spm=a2g0o.order_list.0.0.21ef1802WJAiGd)
   
   [Voron Hardware V0 Display](https://github.com/VoronDesign/Voron-Hardware/tree/master/V0_Display)
+  
+  [Maz0r CanBus Configuratuion and troubleshooting guides](https://maz0r.github.io/klipper_canbus/)
   
  
 
