@@ -47,6 +47,8 @@ note the text inside the [xxxx:yyyy]
 
 ![Wiring](Images/V0Display_CAN_Wiring.jpg)      
 
+![V0 Display Com pins](/Images/V0_Display_com_pins.jpg)
+
 ![Display Wiring IMage](/Images/V0_Display_Wiring.jpg)
 
 ![MPC2551 Wiring](/Images/MCP2551_CAN_Tran_wiring.jpg)
