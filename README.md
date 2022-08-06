@@ -19,7 +19,8 @@ make clean
 ```
 make menuconfig
 ```
-- Set the following options for CANBUS connection     
+- Set the following options for CANBUS connection  
+Note: If you already have a CAN implementation set the CANBUS speed to match your existing configuration. Common speeds are 250000 and 500000
 
 ![Config](/Images/V0Display_CAN_Config.jpg)
 
