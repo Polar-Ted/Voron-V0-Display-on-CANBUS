@@ -45,6 +45,8 @@ note the text inside the [xxxx:yyyy]
 
 ## Wiring Diagram
 
+Note: The MCP2551 does not have 120 ohm resistors. If this is the only device on your CANBUS you will need to wire a 120 ohm resistor between CANH and CANL at the MCP2551 connector. 
+
 ![Wiring](Images/V0Display_CAN_Wiring.jpg)      
 
 ![V0 Display Com pins](/Images/V0_Display_com_pins.jpg)
@@ -53,6 +55,14 @@ note the text inside the [xxxx:yyyy]
 
 ![MPC2551 Wiring](/Images/MCP2551_CAN_Tran_wiring.jpg)
 
+
+## Links  
+
+  [MCP2551 board](https://www.aliexpress.com/item/2255800362518857.html?spm=a2g0o.order_list.0.0.21ef1802WJAiGd)
+  
+  [Voron Hardware V0 Display](https://github.com/VoronDesign/Voron-Hardware/tree/master/V0_Display)
+  
+ 
 
 
 
