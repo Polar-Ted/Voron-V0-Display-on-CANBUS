@@ -26,19 +26,29 @@ make menuconfig
 -Set the DFU boot jumper on the V0 display and connect to the Pi by USB
 
 -Run lsusb from the command prompt
+```
+lsusb
+```
 
 -Make sure you see an STM32 in DFU mode listed
 
 -Run dfu-util --list from the command prompt
-
+```
+dfu-util --list
+```
 note the text inside the [xxxx:yyyy]
 
 -Exit and Save      
 
 -Run make clean to clean up the make environment.
+```
+make clean
+```
 
 -Run make flash FLASH_DEVICE=xxxx:yyyy (using xxxx:yyyy from above)
-
+```
+make flash FLASH_DEVICE=xxxx:yyyy
+```
 -Remove the DFU boot jumper.
 
 -Remove the USB cable, power off system and set up the CAN wiring. 
