@@ -23,39 +23,39 @@ make menuconfig
 
 ![Config](/Images/V0Display_CAN_Config.jpg)
 
--Set the DFU boot jumper on the V0 display and connect to the Pi by USB
+- Set the DFU boot jumper on the V0 display and connect to the Pi by USB
 
--Run lsusb from the command prompt
+- Run lsusb from the command prompt
 ```
 lsusb
 ```
 
--Make sure you see an STM32 in DFU mode listed
+  Make sure you see an STM32 in DFU mode listed
 
--Run dfu-util --list from the command prompt
+- Run dfu-util --list from the command prompt
 ```
 dfu-util --list
 ```
-note the text inside the [xxxx:yyyy]
+  note the text inside the [xxxx:yyyy]
 
--Exit and Save      
+- Exit and Save      
 
--Run make clean to clean up the make environment.
+- Run make clean to clean up the make environment.
 ```
 make clean
 ```
 
--Run make flash FLASH_DEVICE=xxxx:yyyy (using xxxx:yyyy from above)
+- Run make flash FLASH_DEVICE=xxxx:yyyy (using xxxx:yyyy from above)
 ```
 make flash FLASH_DEVICE=xxxx:yyyy
 ```
--Remove the DFU boot jumper.
+- Remove the DFU boot jumper.
 
--Remove the USB cable, power off system and set up the CAN wiring. 
+- Remove the USB cable, power off system and set up the CAN wiring. 
 
 ## Wiring Diagram
 
-Note: The MCP2551 does not have 120 ohm resistors. If this is the only device on your CANBUS you will need to wire a 120 ohm resistor between CANH and CANL at the MCP2551 connector. 
+  Note: The MCP2551 does not have 120 ohm resistors. If this is the only device on your CANBUS you will need to wire a 120 ohm resistor between CANH and CANL at the MCP2551 connector. 
 
 ![Wiring](Images/V0Display_CAN_Wiring.jpg)      
 
