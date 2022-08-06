@@ -1,4 +1,6 @@
-# Voron-V0-Display-on-CANBUS
+# Voron V0 Display on CANBUS
+
+![Working](/Images/V0_Disply_on_CAN.jpg)
 Wiring and config to run the Voron V0 display over CAN
 
 ## Setup Steps
@@ -43,4 +45,12 @@ note the text inside the [xxxx:yyyy]
 
 ## Wiring Diagram
 
-![Wiring](Images/V0Display_CAN_Wiring.jpg)
+![Wiring](Images/V0Display_CAN_Wiring.jpg)      
+
+![Display Wiring IMage](/Images/V0_Display_Wiring.jpg)
+
+![MPC2551 Wiring](/Images/MCP2551_CAN_Tran_wiring.jpg)
+
+
+
+
