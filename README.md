@@ -25,12 +25,12 @@ make menuconfig
 
 - Set the DFU boot jumper on the V0 display and connect to the Pi by USB
 
-- Run lsusb from the command prompt
+- Run lsusb from the command prompt. Make sure you see a device labeled STM32 in DFU mode listed
 ```
 lsusb
 ```
 
-  Make sure you see an STM32 in DFU mode listed
+  
 
 - Run dfu-util --list from the command prompt
 ```
