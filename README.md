@@ -55,7 +55,7 @@ make flash FLASH_DEVICE=xxxx:yyyy
 
 ## Wiring Diagram
 
-  Note: The MCP2551 does not have 120 ohm resistors. If this is the only device on your CANBUS you will need to wire a 120 ohm resistor between CANH and CANL at the MCP2551 connector. 
+  Note: The MCP2551 does not have 120 ohm resistors. If this is the only device on your CANBUS you will need to wire a 120 ohm resistor between CANH and CANL at the MCP2551 connector.  You CANBUS should measure 60 ohms between CAN H and CAN L with all the devices connected. ( measure while powered off) 
 
 ![Wiring](Images/V0Display_CAN_Wiring.jpg)      
 
