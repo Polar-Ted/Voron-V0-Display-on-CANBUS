@@ -20,7 +20,7 @@ make clean
 make menuconfig
 ```
 - Set the following options for CANBUS connection  
--   Note: If you already have a CAN implementation set the CANBUS speed to match your existing configuration. Common speeds are 250000 and 500000
+    Note: If you already have a CAN implementation set the CANBUS speed to match your existing configuration. Common speeds are 250000 and 500000
 
 ![Config](/Images/V0Display_CAN_Config.jpg)
 
@@ -37,7 +37,7 @@ lsusb
 ```
 dfu-util --list
 ```
-  note the text inside the [xxxx:yyyy]
+      note the text inside the [xxxx:yyyy]
 
 - Exit and Save      
 
@@ -56,7 +56,7 @@ make flash FLASH_DEVICE=xxxx:yyyy
 
 ## Wiring Diagram
 
-  Note: The MCP2551 does not have 120 ohm resistors. If this is the only device on your CANBUS you will need to wire a 120 ohm resistor between CANH and CANL at the MCP2551 connector.  You CANBUS should measure 60 ohms between CAN H and CAN L with all the devices connected. ( measure while powered off) 
+    Note: The MCP2551 does not have 120 ohm resistors. If this is the only device on your CANBUS you will need to wire a 120 ohm resistor between CANH and CANL at the MCP2551 connector.  You CANBUS should measure 60 ohms between CAN H and CAN L with all the devices connected. ( measure while powered off) 
 
 ![Wiring](Images/V0Display_CAN_Wiring.jpg)      
 
