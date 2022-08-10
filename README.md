@@ -76,7 +76,7 @@ make flash FLASH_DEVICE=xxxx:yyyy
   
   [Maz0r CanBus Configuratuion and troubleshooting guides](https://maz0r.github.io/klipper_canbus/)
   
- 
+  [rootiest guide to SKR Pico as a USB Can bridge](https://www.reddit.com/r/klippers/comments/wl4t93/skrpico_as_canbus_bridge/)
 
 
 
