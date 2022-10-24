@@ -59,7 +59,9 @@ make flash FLASH_DEVICE=xxxx:yyyy
 
     Note: The MCP2551 does not have 120 ohm resistors. If this is the only device on your CANBUS you will need to wire a 120 ohm resistor between CANH and CANL at the MCP2551 connector.  You CANBUS should measure 60 ohms between CAN H and CAN L with all the devices connected. ( measure while powered off) 
     
-For those that are interested I have designed a carrier board for the MCP2551 to make wiring and jumpering in the 120 ohm resister easy. [Link to PCBWAY project\](https://www.pcbway.com/project/shareproject/Voron_V0_display_CANBUS_Transceiver_5da4f6dd.html) if you want to order bare PCB boards. 
+For those that are interested I have designed a carrier board for the MCP2551 to make wiring and jumpering in the 120 ohm resister easy. [Link to PCBWAY project](https://www.pcbway.com/project/shareproject/Voron_V0_display_CANBUS_Transceiver_5da4f6dd.html) if you want to order bare PCB boards. 
+
+![VO_DIsplay_EZ_CAN board](https://pcbwayfile.s3.us-west-2.amazonaws.com/web/22/10/25/0114274907101m.jpg)
 
 ![Wiring](Images/V0Display_CAN_Wiring.jpg)      
 
