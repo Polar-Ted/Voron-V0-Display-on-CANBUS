@@ -1,20 +1,17 @@
-# Voron V0 Display on CANBUS
+# Voron V0 Display on CANBUS now with CanBoot!
 
 ![Working](/Images/V0_Disply_on_CAN.jpg)
-Wiring and config to run the Voron V0 display over CAN
+Wiring and config to run the Voron V0 display over CAN with CanBoot
 
 ## Setup Steps
 
-### Compile Toolboard Firmware
+### Compile V0 Display Canboot Firmware
 - ssh to your pi console
 - CD to the klipper directory
 ```
 cd klipper
 ```
-- Run MAKE Clean
-```
-make clean
-```
+
 - open menuconfig
 ```
 make menuconfig
@@ -22,7 +19,7 @@ make menuconfig
 - Set the following options for CANBUS connection  
     Note: If you already have a CAN implementation set the CANBUS speed to match your existing configuration. Common speeds are 250000 and 500000
 
-![Config](/Images/V0Display_CAN_Config.jpg)
+![Config](/Images/V0_display_canboot_can.png)
 
 - Set the DFU boot jumper on the V0 display and connect to the Pi by USB
 
@@ -47,13 +44,46 @@ dfu-util --list
 make clean
 ```
 
-- Run make flash FLASH_DEVICE=xxxx:yyyy (using xxxx:yyyy from above)
+- Run make 
 ```
-make flash FLASH_DEVICE=xxxx:yyyy
+make
+```
+
+- Run DFU util to flash the canboot.bin file
+```
+sudo dfu-util -a 0 -D ~/CanBoot/out/canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d 0483:df11
 ```
 - Remove the DFU boot jumper.
 
 - Remove the USB cable, power off system and set up the CAN wiring. 
+
+### Compile V0 Display Klipper Firmware with canboot
+- ssh to your pi console
+- CD to the klipper directory
+```
+cd klipper
+```
+- Run MAKE Clean
+```
+make clean
+```
+- open menuconfig
+```
+make menuconfig
+```
+- Set the following options for CANBUS connection  
+    Note: If you already have a CAN implementation set the CANBUS speed to match your existing configuration. Common speeds are 250000 and 500000
+
+![Config](/Images/V0_display_klipper_can.png)
+
+- Get your UUID
+```
+python3 ~/CanBoot/scripts/flash_can.py -q
+```
+- Flash Klipper to the V0 Display
+```
+python3 ~/CanBoot/scripts/flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u {your uuid}
+```
 
 ## Wiring Diagram
 
